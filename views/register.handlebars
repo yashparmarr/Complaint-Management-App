@@ -1,0 +1,122 @@
+<form method="post" action="/register">
+  <h2>Register for Complaint Management System</h2>
+
+  <!-- Name Input -->
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      class="form-control"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Enter your full name"
+      required
+    />
+  </div>
+
+  <!-- Username Input -->
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input
+      class="form-control"
+      type="text"
+      name="username"
+      id="username"
+      placeholder="Choose a username"
+      required
+    />
+  </div>
+
+  <!-- Email Input -->
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      class="form-control"
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Enter your email"
+      required
+    />
+  </div>
+
+  <!-- Password Input -->
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      class="form-control"
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Choose a password"
+      required
+    />
+  </div>
+
+  <!-- Confirm Password Input -->
+  <div class="form-group">
+    <label for="password2">Confirm Password</label>
+    <input
+      class="form-control"
+      type="password"
+      name="password2"
+      id="password2"
+      placeholder="Confirm your password"
+      required
+    />
+  </div>
+
+  <!-- Role Selection -->
+  <div class="form-group">
+    <label for="role">Role</label>
+    <select class="form-control" name="role" id="role" required>
+      <option value="user">User</option>
+      <option value="jeng">Junior Engineer</option>
+      <option value="admin">Admin</option>
+    </select>
+  </div>
+
+  <!-- Register Button -->
+  <button class="btn btn-success btn-block" type="submit">Register</button>
+
+  <br /><br />
+
+  <!-- Login Link -->
+  <p>Already have an account?
+    <a class="btn btn-warning btn-sm" href="/login">Login Now</a></p>
+</form>
+
+{{! <form method="post" action="/register">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input class="form-control" type="text" name="username" id="username" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input class="form-control" type="text" name="password" id="password" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="password2">Confirm Password</label>
+    <input class="form-control" type="text" name="password2" id="password2" placeholder="Confirm Password">
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <select class="form-control" name="role" id="role">
+        <option value="user">User</option>
+        <option value="jeng">Junior Engineer</option>
+        <option value="admin">Admin</option>
+    </select>
+  </div>
+  <button class="btn btn-success" type="submit">Register</button>
+  <br>
+  <br>
+  Have An Account? <a class="btn btn-warning btn-sm" href="/login">Login Now</a>
+</form> }}
